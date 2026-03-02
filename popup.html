@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <title>AI Summarizer</title>
+        <link rel="stylesheet" href="dist/output.css" />
+    </head>
+    <body
+        class="font-bold bg-zinc-900 text-white min-w-[500px] min-h-[300px] p-4"
+    >
+        <h2 class="mb-4 text-2xl">AI Summary</h2>
+
+        <div>
+            <select
+                id="summary-type"
+                class="bg-zinc-900 text-white border border-violet-500 rounded-md px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-violet-500/50 cursor-pointer"
+            >
+                <option value="brief" class="flex gap-3 mb-4">Brief</option>
+                <option value="detailed" class="flex gap-3 mb-4">
+                    Detailed
+                </option>
+                <option value="bullets" class="flex gap-3 mb-4">
+                    Bullet Points
+                </option>
+            </select>
+
+            <button
+                id="summarize"
+                class="py-2 px-4 bg-purple-600 hover:bg-purple-500 text-white rounded-md cursor-pointer font-bold"
+            >
+                Summarize
+            </button>
+            <button
+                id="copy-btn"
+                class="py-2 px-4 pr-4 rounded-md bg-gray-300 text-black cursor-pointer hover:text-white hover:bg-zinc-900 hover:border hover:border-white"
+            >
+                Copy
+            </button>
+        </div>
+
+        <pre
+            id="result"
+            class="mt-4 p-4 border rounded-md min-h-40 max-h-[400px] overflow-y-auto whitespace-pre-wrap leading-normal"
+        >
+Select a type and click Summarize...</pre
+        >
+
+        <script src="popup.js"></script>
+    </body>
+</html>

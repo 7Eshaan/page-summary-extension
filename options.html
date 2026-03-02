@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Extension Options</title>
+        <link rel="stylesheet" href="dist/output.css" />
+    </head>
+    <body class="bg-zinc-900 font-bold p-5 max-w-[600px] my-0 mx-auto">
+        <h1 class="text-purple-500 text-3xl">AI Summary Settings</h1>
+        <div class="mb-5">
+            <label for="api-key" class="text-lg text-white block mb-2 font-bold"
+                >Gemini API Key</label
+            >
+            <input
+                id="api-key"
+                type="text"
+                placeholder="Enter your Gemini API key"
+                class="text-white w-full p-2 box-border border rounded-md"
+            />
+
+            <p class="text-white my-5">
+                Get your API Key here
+                <a
+                    href="https://aistudio.google.com/app/api-keys"
+                    class="text-purple-500 underline hover:text-purple-400"
+                    >Google AI Studio</a
+                >
+            </p>
+        </div>
+
+        <button
+            id="save-button"
+            class="bg-purple-500 hover:bg-purple-400 text-white px-3 py-4 rounded-md cursor-pointer"
+        >
+            Save Settings
+        </button>
+        <p id="success-message" class="text-[chartreuse] mt-3 hidden">
+            Settings saved successfully
+        </p>
+
+        <script src="options.js"></script>
+    </body>
+</html>
